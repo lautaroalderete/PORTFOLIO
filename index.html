@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="canonical" href="https://lautyalde.com">
+    <meta name="description" content="Portafolio de Lautaro Alderete, diseñador y frontend developer.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
     <title>Portfolio</title>
 </head>
 <body>
     <header>
-        <div id="nav">
+        <div id="nav" data-aos="fade-down">
             <nav>
                 <a href="#bienvenido" class="links-nav">Home</a>
-                <a href="#bio" class="links-nav">About Me</a>
+                <a href="#biog" class="links-nav">About Me</a>
+                <a href="#skills" class="links-nav">Skills</a>
                 <a href="#projects" class="links-nav">Projects</a>
                 <a href="#contact" class="links-nav">Contact</a>
             </nav>
@@ -26,16 +29,43 @@
             <h1>Designer & Frontend Developer</h1>
             <h2>I design and code beautifully simple things, and I love what I do.</h2>
         </div>
-        <div id="bio">
-            <h1>Hi, I’m Lautaro. Nice to meet you.</h1>
+        <div id="bio" data-aos="fade-right" data-aos-duration="1200">
+            <h1 id="biog">Hi, I’m Lautaro. Nice to meet you.</h1>
             <h2>I'm passionate about web design and development, eager to transform ideas into engaging and functional digital experiences.
                 I love creating modern, visually stunning websites with intuitive interaction. I'm always learning new technologies and exploring creative ways to communicate through code.
                 If you have an idea in mind or just want to chat about projects, feel free to contact me!</h2>
         </div>
+
+        <section id="skills" class="skills" data-aos="fade-up">
+          <h2>Skills</h2>
+          <div class="skills-grid">
+            <div class="skill" data-aos="zoom-in" data-aos-delay="100">
+              <i class="fab fa-html5"></i>
+              <p>HTML5</p>
+            </div>
+            <div class="skill" data-aos="zoom-in" data-aos-delay="200">
+              <i class="fab fa-css3-alt"></i>
+              <p>CSS3</p>
+            </div>
+            <div class="skill" data-aos="zoom-in" data-aos-delay="300">
+              <i class="fab fa-js-square"></i>
+              <p>JavaScript</p>
+            </div>
+            <div class="skill" data-aos="zoom-in" data-aos-delay="400">
+              <i class="fab fa-git-alt"></i>
+              <p>Git</p>
+            </div>
+            <div class="skill" data-aos="zoom-in" data-aos-delay="500">
+              <i class="fab fa-python"></i>
+              <p>Python</p>
+            </div>
+          </div>
+        </section>        
+
         <div class="projects" id="projects">
             <h1>My Projects</h1>
             <div class="project-list">
-                <div class="project-item">
+                <div class="project-item" data-aos="zoom-in" data-aos-delay="150">
                     <img src="IMAGES/Mero Imports.png" alt="Mero Imports" class="img-projects">
                     <div class="descripcion">
                         <div>
@@ -44,8 +74,8 @@
                         </div>
                       </div>                      
                 </div>
-                <div class="project-item">
-                    <img src="IMAGES/tobi.png" alt="Tobias Ayala Fitness" class="img-projects">
+                <div class="project-item" data-aos="zoom-in" data-aos-delay="150">
+                    <img src="IMAGES/Tobias.png" alt="Tobias Ayala Fitness" class="img-projects">
                     <div class="descripcion">
                         <div>
                           <p>Landing Page Asesoramiento Fitness</p>
@@ -53,7 +83,7 @@
                         </div>
                       </div>                      
                 </div>
-                <div class="project-item">
+                <div class="project-item" data-aos="zoom-in" data-aos-delay="150">
                     <img src="IMAGES/Mero Imports.png" alt="Mero Imports" class="img-projects">
                     <div class="descripcion">
                         <div>
@@ -62,7 +92,7 @@
                         </div>
                       </div>                      
                 </div>
-                <div class="project-item">
+                <div class="project-item" data-aos="zoom-in" data-aos-delay="150">
                     <img src="IMAGES/Mero Imports.png" alt="Mero Imports" class="img-projects">
                     <div class="descripcion">
                         <div>
@@ -73,7 +103,7 @@
                 </div>
             </div>
         </div>
-        <div class="contact" id="contact">
+        <div class="contact" id="contact" data-aos="flip-left" data-aos-duration="1000">
             <h1>Contact Me</h1>
             <p>Feel free to drop a message. I’ll get back to you as soon as I can.</p>
             
@@ -110,6 +140,9 @@
           </div>
         </div>
       </footer>
-      
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>     
 </body>
 </html>
